@@ -23,5 +23,7 @@ Bilingual landing page: **https://qiu-kaixin.github.io/shangyou/**
 ## 说明 Notes
 
 - 本仓库仅发布安装包与介绍页，不含源码 · This repository distributes the binary only; source code is not included.
+- 古籍原文属公有领域；应用内的白话译文、训诂注释与题库为原创整理成果，**版权归本应用所有**，未经授权禁止提取、复制、转载或二次分发（数据文件经加密并嵌有取证标识）。
+  - Classical texts are public domain; the translations, annotations and quiz bank are original works **copyrighted by the app**. Extraction, copying or redistribution without authorization is prohibited (data files are encrypted and carry forensic identifiers).
 - 应用保留所有权利 · All rights reserved.
 - 隐私政策 Privacy Policy: https://qiu-kaixin.github.io/shangyou/privacy.html
