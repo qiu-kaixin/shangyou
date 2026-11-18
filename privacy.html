@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>用户协议与隐私政策 · 尚友</title>
+<meta name="description" content="尚友应用的用户协议与隐私政策：本机数据、可选局域网题壁传输、权限使用、未成年人保护与用户生成内容规范。" />
+<meta name="robots" content="index,follow" />
+<style>
+  :root { color-scheme: light; --ink:#2b241b; --muted:#6f6252; --line:#e3d9c6; --paper:#fbf7ee; --card:#fffdf8; --accent:#8a6a3b; }
+  * { box-sizing: border-box; }
+  body { margin:0; padding:0 1rem 4rem; background:var(--paper); color:var(--ink);
+    font:16px/1.85 -apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei","Noto Serif CJK SC",serif; }
+  main { max-width:760px; margin:0 auto; }
+  header { padding:3rem 0 1.5rem; border-bottom:1px solid var(--line); }
+  h1 { margin:0 0 .5rem; font-size:1.8rem; letter-spacing:.06em; }
+  .updated { margin:0; color:var(--muted); font-size:.9rem; }
+  section { margin:2.2rem 0; padding:1.4rem 1.6rem; background:var(--card);
+    border:1px solid var(--line); border-radius:10px; }
+  h2 { margin:0 0 1.2rem; font-size:1.3rem; color:var(--accent); letter-spacing:.08em; }
+  h3 { margin:1.6rem 0 .5rem; font-size:1.05rem; }
+  h3:first-of-type { margin-top:.4rem; }
+  p { margin:.6rem 0; }
+  ul { margin:.6rem 0; padding-left:1.4rem; }
+  li { margin:.35rem 0; }
+  strong { color:#6d4f24; }
+  a { color:var(--accent); }
+  code { padding:.1rem .3rem; background:#f2ebdc; border-radius:4px; font-size:.9em; }
+  footer { margin-top:2rem; text-align:center; color:var(--muted); font-size:.85rem; }
+  @media (prefers-color-scheme: dark) {
+    :root { color-scheme: dark; --ink:#e9e1d2; --muted:#a99b86; --line:#3b342a; --paper:#1b1814; --card:#242019; --accent:#d2b077; }
+    strong { color:#e4c68e; } code { background:#332d23; }
+  }
+</style>
+</head>
+<body>
+<main>
+<header>
+  <h1>用户协议与隐私政策</h1>
+  <p class="updated">尚友 · 生效日期 2026 年 11 月 8 日 · 版本 1.3</p>
+</header>
+<section>
+<h2>一、隐私政策</h2>
+<h3>1. 一句话总览</h3>
+<p>尚友默认是一台<strong>离线阅读器</strong>：不注册、不登录、无账号，学习数据只在你自己的设备上。唯一的例外是「胜迹图 · 题壁」——这项功能<strong>默认关闭</strong>，只有你（或你所在课堂的组织者）在设置页主动填写一个服务地址后，才会把你在壁上写的内容发往<strong>那台由你指定的自建服务</strong>。</p>
+<h3>2. 保存在本机、不会上传的数据</h3>
+<ul><li>阅读记录、生词本、划线笔记、断句错题、科举成绩、收藏、每日一签与各类偏好设置。</li><li>本机写下的题诗、评点与自建景点副本（用于断网时照常使用，联网后按你的操作同步）。</li><li>以上数据仅存于本应用的本地存储，开发者不设置服务器接收它们。可在设置页「清空数据」中分类清除，或卸载应用一并删除；「导出备份」生成的 JSON 文件保存在你自己在系统分享面板里选择的位置。</li></ul>
+<h3>3. 可选的局域网题壁：会传输什么</h3>
+<p>在设置页填写题壁服务地址并连接成功后，为让同一 Wi-Fi 下的人看见彼此的壁上之作，应用会向该地址发送：</p>
+<ul><li>你填写的<strong>署名</strong>、<strong>题诗正文与标题</strong>、<strong>评点正文</strong>；</li><li>你建立的<strong>景点名称、经纬度与所属省／市／县</strong>；</li><li>一个随机生成的<strong>设备标识</strong>（不含手机号、IMEI、MAC、广告 ID 等系统标识符），仅用于区分「哪些是我写的」，以便你删除自己的内容；</li><li>上述内容的写入时间与一条内容 ID（用于断网补传时不重复）。</li></ul>
+<p><strong>这台服务不由开发者运营</strong>：它通常是你自己电脑上的程序，或学校、教师在同一局域网内搭建的服务。开发者不接收、不存储、不分析这些内容，也无从访问该服务。谁搭建服务，谁就是这些数据的管理者；若你在他人组织（如课堂）中使用，请向该组织者了解其保存与清理规则。</p>
+<p>连接采用 http 明文，仅适用于可信的家庭或校园局域网。<strong>请勿把服务暴露到公网，也请勿在公共 Wi-Fi 中传输任何敏感内容</strong>；不填写地址时，应用不会发起任何题壁网络请求。</p>
+<h3>4. 权限使用说明</h3>
+<ul><li><strong>网络访问（INTERNET）</strong>：Web 版加载内容接口、以及上述可选题壁功能使用；离线阅读、练习、背诵、导出等功能不依赖网络。</li><li><strong>通知权限（POST_NOTIFICATIONS 等）</strong>：仅当你主动开启「每日提醒」时申请，用于本机定时投递固定文案的提醒，内容不含个人信息，可随时关闭。</li><li>本应用<strong>不申请</strong>定位、相机、麦克风、通讯录、短信、相册、存储读写等敏感权限。</li></ul>
+<h3>5. 第三方服务与 SDK</h3>
+<ul><li>应用基于开源框架 React、Capacitor 等构建，这些框架本身不向开发者回传数据。</li><li>朗读调用<strong>系统自带</strong>的文字转语音（TTS）引擎，由系统在设备本地合成；是否收集信息取决于你所选的系统语音服务，我们不经手。</li><li>不含广告 SDK、统计分析 SDK、崩溃上报 SDK，不做用户画像与个性化推荐。</li><li>「设置 → 关于」提供<strong>可选</strong>的赞助入口，指向外部赞助平台页面。点击后将离开本应用，该平台按其自身的隐私规则处理信息；本应用不接收你的支付信息，赞助为自愿赠与，不解锁任何内容或功能。</li></ul>
+<h3>6. 未成年人保护</h3>
+<p>本应用面向传统文化学习者，中小学生亦可使用。应用不要求填写姓名、年龄、学校、联系方式，也不会主动识别使用者是否为未成年人。若未成年人使用第 3 节的可选题壁功能，其署名与所写内容会发送到该局域网服务，<strong>建议由家长或教师组织并告知不要填写真实姓名等个人信息</strong>。</p>
+<p>监护人可随时在设置页清除本机数据、删除自己写下的题诗与评点，或卸载应用。内容若已同步到自建服务，需由该服务的管理者在服务端删除；应用内删除会同时向已连接的服务发出删除请求。</p>
+<h3>7. 数据安全与保存期限</h3>
+<p>本机数据由你设备的操作系统保管，卸载即清除。自建服务上的内容由服务管理者按其规则保存与备份，开发者无法代为删除或设定保存期限。应用不使用加密传输（见第 3 节），请勿在其中填写敏感信息。</p>
+<h3>8. 你的权利</h3>
+<ul><li><strong>查看与导出</strong>：设置页可导出学习数据备份，题壁内容在页面上直接可见。</li><li><strong>删除</strong>：可删除自己写下的题诗、评点与自建景点；本机数据可分类清空，或卸载应用。</li><li><strong>举报</strong>：对他人写下的内容，可在评点旁点「举报」，记录会留在该自建服务供管理者处置。</li><li><strong>撤回同意</strong>：清空题壁服务地址并停用本功能即可停止后续传输。</li></ul>
+<h3>9. 政策更新与联系我们</h3>
+<p>若应用形态变化（例如将来增加账号或由开发者运营的云服务），我们会更新本政策，在应用内显著提示并重新征求同意。</p>
+<p>如对本政策有疑问，可通过你下载本应用的应用商店开发者页面联系开发者；应用内「设置 → 关于 → 复制诊断信息」可取得版本与环境信息。</p>
+</section>
+<section>
+<h2>二、用户协议</h2>
+<h3>1. 服务性质</h3>
+<p>尚友提供古籍原文阅读、注释、白话译文、朗读、练习与「胜迹图 · 题壁」等学习与交流功能。应用本体可完全离线使用；题壁为可选的自建局域网功能，开发者不提供公共服务器、不设账号体系，也不对第三方自建服务上的内容承担运营管理责任。</p>
+<h3>2. 内容与版权</h3>
+<ul><li>古籍原文属公有领域财产，供公众自由研读。</li><li>应用内的白话译文、注释、讲解、练习题目为原创或整理，配图由<strong>AI 生成示意图</strong>辅助创作（页面图注已标注），仅供个人学习使用，未经许可不得批量复制、商用或转载。</li><li>你写下的题诗、评点与自建景点，权利归你所有；你同意为「同一局域网内互相看见」之目的在该服务上展示。</li></ul>
+<h3>3. 用户生成内容规范</h3>
+<p>使用题壁、评点、自建景点功能时，你<strong>不得发布</strong>下列内容：</p>
+<ul><li>违反法律法规、危害国家安全、破坏民族团结、宣扬暴力或淫秽色情的内容；</li><li>侮辱、诽谤、骚扰他人，或泄露他人姓名、住址、电话、账号等个人信息的内容；</li><li>广告、推广、引流联系方式、刷屏、恶意占位，以及冒充他人或伪造来源的内容；</li><li>侵犯他人著作权、商标权等合法权益的内容。</li></ul>
+<p>应用与自建服务会对明显的广告、联系方式与违规用语做基础过滤；发现违规内容，任何人都可在评点旁点「举报」。服务管理者（自建者／课堂组织者）可删除违规内容；你也可随时删除自己写下的内容。若内容已同步到服务上，删除请求会一并送达；离线期间的删除会在重新连上后补送。</p>
+<h3>4. 免责声明</h3>
+<p>我们尽力校对内容，但古籍整理工作量大，仍可能存在文字、标点或注释疏漏。应用内容仅供学习参考，<strong>不建议作为学术引用或权威版本的替代</strong>。因设备故障、卸载应用、清理数据或自建服务关闭造成的内容丢失，开发者不承担责任，请善用「导出备份」。</p>
+<h3>5. 服务的变更与终止</h3>
+<p>我们可能对应用功能、内容进行更新与调整。因数据保存在你的设备上，卸载应用即意味着服务终止且本地数据随之删除。</p>
+<h3>6. 联系我们</h3>
+<p>如对本政策有疑问，可通过你下载本应用的应用商店开发者页面联系开发者；应用内「设置 → 关于 → 复制诊断信息」可取得版本与环境信息。</p>
+</section>
+<footer>© 尚友 · 本页为自包含静态页，可离线阅读，不加载任何外部脚本或统计。</footer>
+</main>
+</body>
+</html>
